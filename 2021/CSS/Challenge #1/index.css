@@ -1,0 +1,81 @@
+@import url(https://fonts.google.com/specimen/Montserrat?query=mont);
+
+@font-face {
+  font-family: "Bebas Neue";
+  src: url("./PROJECT-FILES/STARTER/fonts/bebasneue-book-webfont.woff"),
+    url("./PROJECT-FILES/STARTER/fonts/bebasneue-book-webfont.woff2");
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+:root {
+  --primary: #2b2a30;
+  --secondary: #9d0000;
+  --tertiary: #00aa51;
+}
+
+body {
+  height: 100vh;
+
+  background: var(--primary);
+}
+
+.grid-wrapper {
+  height: 100%;
+
+  display: grid;
+  place-items: center;
+}
+
+.timer-wrapper {
+  width: 500px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  box-shadow: -5px 14px 44px rgb(0, 0, 0),
+    5px -16px 50px rgba(255, 255, 255, 0.15);
+  background: rgb(0, 0, 0);
+  padding: 10px;
+}
+
+.timer {
+  background: radial-gradient(circle, #3a393f, #17171a);
+  height: 100%;
+  border-radius: 50%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 198px;
+  font-family: "Bebas Neue", sans-serif;
+  color: white;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button#start {
+  font-size: 16px;
+  letter-spacing: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+h1,
+button#start {
+  background: linear-gradient(to bottom, #ffffff, #d5d8e1);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+
+  margin-bottom: 2rem;
+}
