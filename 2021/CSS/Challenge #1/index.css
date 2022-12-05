@@ -10,6 +10,7 @@
   box-sizing: border-box;
   margin: 0;
   font-family: sans-serif;
+  user-select: none;
 }
 
 :root {
@@ -37,7 +38,7 @@ body {
   border-radius: 50%;
   box-shadow: -5px 14px 44px rgb(0, 0, 0),
     5px -16px 50px rgba(255, 255, 255, 0.15);
-  background: rgb(0, 0, 0);
+  background: conic-gradient(var(--secondary) 0deg, #000 0deg);
   padding: 10px;
 }
 
@@ -61,6 +62,7 @@ h1 {
 button {
   background: none;
   border: none;
+  cursor: pointer;
 }
 
 button#start {
@@ -77,5 +79,5 @@ button#start {
   -webkit-background-clip: text;
   color: transparent;
 
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
 }
