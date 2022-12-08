@@ -65,7 +65,7 @@ button {
   cursor: pointer;
 }
 
-button#start {
+.controls button {
   font-size: 16px;
   letter-spacing: 10px;
   font-family: "Montserrat", sans-serif;
@@ -73,11 +73,15 @@ button#start {
 }
 
 h1,
-button#start {
+.controls button {
   background: linear-gradient(to bottom, #ffffff, #d5d8e1);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 
   margin-bottom: 1.2rem;
+}
+
+.hidden {
+  display: none;
 }
